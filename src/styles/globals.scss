@@ -1,0 +1,158 @@
+//iransan
+@font-face {
+  font-family: IranSans;
+  src: url("./fonts/IRANSansWeb(FaNum)_Medium.eot");
+  src: url("./fonts/IRANSansWeb(FaNum)_Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/IRANSansWeb(FaNum)_Medium.woff") format("woff"),
+    url("./fonts/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: IranSans;
+  src: url("./fonts/IRANSansWeb(FaNum)_Bold.eot");
+  src: url("./fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+    url("./fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: IranSans;
+  src: url("./fonts/IRANSansWeb(FaNum).eot");
+  src: url("./fonts/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"),
+    url("./fonts/IRANSansWeb(FaNum).woff") format("woff"),
+    url("./fonts/IRANSansWeb(FaNum).ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+//yekan bakh
+@font-face {
+  font-family: YekanBakh;
+  src: url("./fonts/YekanBakhFaNumMedium.eot");
+  src: url("./fonts/YekanBakhFaNumMedium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/YekanBakhFaNumMedium.woff") format("woff"),
+    url("./fonts/YekanBakhFaNumMedium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: YekanBakh;
+  src: url("./fonts/YekanBakhFaNumBold.eot");
+  src: url("./fonts/YekanBakhFaNumBold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/YekanBakhFaNumBold.woff") format("woff"),
+    url("./fonts/YekanBakhFaNumBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: YekanBakh;
+  src: url("./fonts/YekanBakhFaNumHeavy.eot");
+  src: url("./fonts/YekanBakhFaNumHeavy.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/YekanBakhFaNumHeavy.woff") format("woff"),
+    url("./fonts/YekanBakhFaNumHeavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: ZarinExpress;
+  src: url("./fonts/ze-home-v1.eot");
+  src: url("./fonts/ze-home-v1.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/ze-home-v1.woff") format("woff"),
+    url("./fonts/ze-home-v1.ttf") format("truetype"),
+    url("./fonts/ze-home-v1.svg") format("svg");
+
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body,
+html {
+  font-family: "IranSans", sans-serif !important;
+  font-size: 14px;
+  line-height: 16px;
+  direction: rtl;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background-color: #f4f5f7;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 62em) {
+    padding-right: 16px;
+    padding-left: 16px;
+    min-width: 992px;
+    max-width: 1232px;
+  }
+  @media screen and (max-width: 61.99em) {
+    padding-right: 8px;
+    padding-left: 8px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+.primary-button {
+  background-color: #ffc200;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  line-height: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px 24px;
+  width: 100%;
+  height: 48px;
+  cursor: pointer;
+  border: none;
+  margin-top: 32px;
+}
+.btn {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.16rem;
+  line-height: 24px;
+  position: relative;
+  z-index: 2001;
+  margin-right: auto;
+  @media screen and (min-width: 62em) {
+    padding: 12px 24px;
+  }
+  @media screen and (max-width: 61.99em) {
+    padding: 12px;
+  }
+  @media screen and (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+}
+.icon {
+  &:before,
+  &:after {
+    font-family: ZarinExpress;
+    font-size: 100%;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1;
+  }
+}
+a {
+  text-decoration: none !important;
+}
